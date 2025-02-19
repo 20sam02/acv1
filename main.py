@@ -1,1 +1,3 @@
-print("yo")
+from fastapi import FastAPI
+
+main = FastAPI()
