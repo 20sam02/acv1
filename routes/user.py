@@ -7,7 +7,7 @@ user = APIRouter()
 @user.get("/users")
 
 def get_users():
-        return conn.execute(users.select().fetch_all)
+        return conn.execute(users.select()).fetchall()
 
 @user.get("/users")
 
